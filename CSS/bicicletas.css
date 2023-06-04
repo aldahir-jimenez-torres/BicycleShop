@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+/* Contenedor */
+.contenedor{
+    /*background-color: rgb(245, 245, 245);*/
+    background-color: black;
+    padding-bottom: 40px;    
+}
+/* Header -Menu */
+.header{
+    padding-top: 10px;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Navegacion */
+.menu{
+    display: none;
+}
+@media (min-width:768px) {
+    .menu{
+        display: flex;
+    }
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+@media (min-width:768px) {
+    .navegacion{
+        gap: 30px;
+    }
+}
+@media (min-width:992px) {
+    .navegacion{
+        gap: 50px;
+    }
+}
+.navegacion a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+}
+.navegacion a:hover{
+    color: #00bfff;
+}
+.menu ul li .activo{
+    color: #00bfff;
+    font-weight: bold;
+}
+
+
+
+/* Seccion principal */
+.principal{
+    width: 90%;
+    margin-inline:auto;
+}
+
+.txtPresentacion{
+    color: white;
+    text-align: center;
+}
+
+/* Lista bicicletas */
+.contenedor_bicis{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.seccion_bicis{
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 85px;
+}
+@media (min-width:768px) {
+    .seccion_bicis{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width:992px) {
+    .seccion_bicis{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+.bicis2{
+    margin: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    border: 4px solid #2626ba;
+    border-style: groove;
+    
+}
+.bicis2 img{
+    margin-top: 4px;
+    margin-bottom: -4px;
+    border-radius: 3px;
+}
+.nom_bicis{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 3px;
+}
+.precio{
+    color: red;
+    margin: 3px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.descuento{
+    color: #a7a7a7;
+    font-size: 0.8em;
+    text-decoration: line-through;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.contenedor-compra{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: red;
+    border-radius: 4px;
+}
+.contenedor-compra:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+	transition: transform 0.3s;
+}
+.btn_comprar{
+    font-weight: 500;
+    font-size: 1em;
+    background-color: red;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.barra-paginacion{
+    margin: 20px 0;
+}
+.barra-paginacion ul{
+    list-style: none;
+    text-align: center;
+}
+.barra-paginacion ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.barra-paginacion ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background: #024959;
+    text-decoration: none;
+}
+.barra-paginacion ul li a:hover{
+    background: #037E8C;
+}
+.barra-paginacion ul li .activo{
+    background: #037E8C;
+    font-weight: bold;
+}
+
+/*footer*/
+.pie{
+	background: #09346b;
+	overflow: hidden;
+}
+.izquierda{
+	float: left;
+	width: 550px;
+	padding: 20px;
+}
+.derecha{
+	float: left;
+	width: 550px;
+	padding: 20px;
+}
+.abajo{
+	color: white;
+	font-size: 16px;
+	padding: 10px;
+}
+.siguenos{
+	text-align: center;
+	color:white;
+	padding: 15px 0;
+}
+.imgAlt{
+    width: fit-content;
+}
